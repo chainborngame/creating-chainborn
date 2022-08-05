@@ -1,6 +1,6 @@
 # Creating ChainBorn
 
-This is the repository accompanying the blogpost [Creating ChainBorn]() with all the example code and scripts.
+This is the repository accompanying the blogpost [Creating ChainBorn](https://medium.com/chainborn/creating-chainborn-fce259fde45d) with all the example code and scripts.
 
 These examples and the accompanying blogpost have been submitted against the ["Hello world" Reference Game](https://tezos.foundation/bounty-program/) bounty from the Tezos Foundation.
 

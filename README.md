@@ -6,4 +6,12 @@ These examples and the accompanying blogpost have been submitted against the ["H
 
 We really hope you enjoy the article and sample code and hope you find it useful!
 
+# Install SmartPy
+
+We start the process my installing SmartPy using the `init-env.sh` script.
+
+```
+./init-env.sh
+```
+
 ~ The ChainBorn Team.

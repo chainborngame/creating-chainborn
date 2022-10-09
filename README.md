@@ -54,8 +54,19 @@ spy originate-contract --code compiled/controller/step_000_cont_0_contract.tz --
 
 Your contract addresses will differ. Now you can head over to [Better Call Dev](https://better-call.dev/) and you can administer them from there. Copy the address from the cli and paste on BCD to find them.
 
-Under the "interact" tab, select the `add_admin` entrypoint on the datastore contract on BCD to set the controller as an admin on the datastore.
+# Prepare the contracts
+
+## Set the controller as admin on the datastore
+
+On BCD for the datastore contract, find the "interact" tab, select the `add_admin` entrypoint to set the controller as an admin.
 
 ![Add Admin](screenshots/add_admin.png?raw=true "Add Admin")
+
+## Update controller config 
+
+We need to set the correct `datastore_address` and `randomizer_address` on the controller. It's perhaps better to make a script for this since the config has many variable and we need to set the all in one go, but for now we can do this also via BCD. For the `datastore_address` use the address for the datastore contract you originated above. For the `randomizer_address` use `KT1Ls4XzMgz59Z2UxRroAtrQ8gN8c5AWeV9B`. Make sure all the other config options are the same as they are currently (or modify to your liking).
+
+![Set Config](screenshots/set_config.png?raw=true "Set Config")
+
 
 ~ The ChainBorn Team.

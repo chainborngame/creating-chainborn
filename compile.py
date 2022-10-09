@@ -5,12 +5,12 @@ from datetime import datetime, timezone
 env = os.environ
 
 cwd = os.getcwd()
-Data = sp.io.import_script_from_url("file://%s/datastore.py" % cwd)
-Game = sp.io.import_script_from_url("file://%s/controller.py" % cwd)
+Datastore = sp.io.import_script_from_url("file://%s/datastore.py" % cwd)
+Controller = sp.io.import_script_from_url("file://%s/controller.py" % cwd)
 
 admin = sp.address('tz1UZZnrre9H7KzAufFVm7ubuJh5cCfjGwam')
 
-chainborn_data_metadata = {
+chainborn_datastore_metadata = {
   "name": "Chainborn Datastore",
   "description": "Chainborn Datastore",
   "version": "1.0.0",
@@ -19,7 +19,7 @@ chainborn_data_metadata = {
   "interfaces": ["TZIP-016"]
 }
 
-chainborn_game_metadata = {
+chainborn_controller_metadata = {
   "name": "Chainborn Game",
   "description": "Chainborn Game",
   "version": "1.0.0",
@@ -28,18 +28,18 @@ chainborn_game_metadata = {
   "interfaces": ["TZIP-016"]
 }
 
-sp.add_compilation_target("data", Data.ChainBornData(
+sp.add_compilation_target("datastore", Datastore.ChainBornData(
     sp.set([admin]),
     sp.big_map(
       {
         "": sp.utils.bytes_of_string("tezos-storage:content"),
-        "content": sp.utils.bytes_of_string(json.dumps(chainborn_data_metadata))
+        "content": sp.utils.bytes_of_string(json.dumps(chainborn_datastore_metadata))
       }
     )
   )
 )
 
-sp.add_compilation_target("game", Game.ChainBornGame(
+sp.add_compilation_target("controller", Controller.ChainBornGame(
     sp.set([admin]),
     sp.map({
       admin: 100
@@ -49,7 +49,7 @@ sp.add_compilation_target("game", Game.ChainBornGame(
     sp.big_map(
       {
         "": sp.utils.bytes_of_string("tezos-storage:content"),
-        "content": sp.utils.bytes_of_string(json.dumps(chainborn_game_metadata))
+        "content": sp.utils.bytes_of_string(json.dumps(chainborn_controller_metadata))
       }
     )
   )

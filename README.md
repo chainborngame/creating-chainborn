@@ -29,4 +29,17 @@ First, edit the `compile.py` file replacing `admin` with your Tezos address.
 spy compile compile.py compiled
 ```
 
+# Originate the contracts (on ghostnet)
+
+We can now originate the contracts on [ghostnet](https://teztnets.xyz/).
+
+```
+spy originate-contract --code compiled/datastore/step_000_cont_0_contract.tz --storage compiled/datastore/step_000_cont_0_storage.tz --rpc https://ghostnet.smartpy.io
+[INFO] - Using RPC https://ghostnet.smartpy.io...
+[INFO] - Contract KT1J5wddYxtFehL7iNgYGE1sSEzptbXBUoch originated!!!
+spy originate-contract --code compiled/controller/step_000_cont_0_contract.tz --storage compiled/controller/step_000_cont_0_storage.tz --rpc https://ghostnet.smartpy.io
+[INFO] - Using RPC https://ghostnet.smartpy.io...
+[INFO] - Contract KT1Vope8at5KLwtJrzgLBmRYnSzfdLu3w63w originated!!!
+```
+
 ~ The ChainBorn Team.

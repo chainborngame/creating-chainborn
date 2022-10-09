@@ -21,6 +21,14 @@ source bin/activate
 spy --version
 ```
 
+# Run the tests
+
+Let's verify all our tests are passing.
+
+```
+spy kind all tests.py output --html --stop-on-error
+```
+
 # Compile the contracts
 
 First, edit the `compile.py` file replacing `admin` with your Tezos address.

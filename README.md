@@ -42,4 +42,6 @@ spy originate-contract --code compiled/controller/step_000_cont_0_contract.tz --
 [INFO] - Contract KT1Vope8at5KLwtJrzgLBmRYnSzfdLu3w63w originated!!!
 ```
 
+Your contract addresses will differ. Now you can head over to [Better Call Dev](https://better-call.dev/) and you can administer them from there. Copy the address from the cli and paste on BCD to find them.
+
 ~ The ChainBorn Team.

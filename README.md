@@ -23,6 +23,8 @@ spy --version
 
 # Compile the contracts
 
+First, edit the `compile.py` file replacing `admin` with your Tezos address.
+
 ```
 spy compile compile.py compiled
 ```

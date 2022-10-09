@@ -8,7 +8,7 @@ cwd = os.getcwd()
 Data = sp.io.import_script_from_url("file://%s/datastore.py" % cwd)
 Game = sp.io.import_script_from_url("file://%s/controller.py" % cwd)
 
-admin = sp.address(env['CHAINBORN_ADMIN'])
+admin = sp.address('tz1UZZnrre9H7KzAufFVm7ubuJh5cCfjGwam')
 
 chainborn_data_metadata = {
   "name": "Chainborn Datastore",

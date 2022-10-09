@@ -580,7 +580,7 @@ class ChainBornGame(sp.Contract):
     xp_looser = xp_victor // 2
 
     # Calculate loot & earnings 
-    loot_total = sp.mul(2, battle.loot)
+    loot_total = sp.mul(sp.nat(2), battle.loot)
     heroes_percentage = sp.as_nat(100 - self.data.config.platform_loot_percentage, 'Negative heroes_percentage not allowed')
     hero_amount = sp.split_tokens(battle.loot, heroes_percentage, 100)
     heroes_amount = sp.split_tokens(loot_total, heroes_percentage, 100)

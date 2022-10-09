@@ -21,7 +21,7 @@ chainborn_data_metadata = {
 
 chainborn_game_metadata = {
   "name": "Chainborn Game",
-  "description": "Chainborn Game [BETA]",
+  "description": "Chainborn Game",
   "version": "1.0.0",
   "homepage": "https://chainborn.xyz",
   "authors": ["asbjornenge <asbjorn@tezid.net>"],
@@ -41,8 +41,11 @@ sp.add_compilation_target("data", Data.ChainBornData(
 
 sp.add_compilation_target("game", Game.ChainBornGame(
     sp.set([admin]),
+    sp.map({
+      admin: 100
+    }),
     admin,
-    admin,
+    admin, 
     sp.big_map(
       {
         "": sp.utils.bytes_of_string("tezos-storage:content"),

@@ -29,6 +29,8 @@ Let's verify all our tests are passing.
 spy kind all tests.py output --html --stop-on-error
 ```
 
+Give it some time to finish. If we get noe output that means all tests are passing and we are ready to compile the contracts. 
+
 # Compile the contracts
 
 First, edit the `compile.py` file replacing `admin` with your Tezos address.

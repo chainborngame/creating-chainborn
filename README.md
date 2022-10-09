@@ -14,4 +14,17 @@ We start the process my installing SmartPy using the `init-env.sh` script.
 ./init-env.sh
 ```
 
+Activate the vritualenv and check that the `spy` (smartpy) command exists.
+
+```
+source bin/activate
+spy --version
+```
+
+# Compile the contracts
+
+```
+spy compile compile.py compiled
+```
+
 ~ The ChainBorn Team.

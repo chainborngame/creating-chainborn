@@ -22,7 +22,7 @@ chainborn_data_metadata = {
 chainborn_game_metadata = {
   "name": "Chainborn Game",
   "description": "Chainborn Game [BETA]",
-  "version": "1.2.0",
+  "version": "1.0.0",
   "homepage": "https://chainborn.xyz",
   "authors": ["asbjornenge <asbjorn@tezid.net>"],
   "interfaces": ["TZIP-016"]

@@ -68,5 +68,18 @@ We need to set the correct `datastore_address` and `randomizer_address` on the c
 
 ![Set Config](screenshots/set_config.png?raw=true "Set Config")
 
+Now we could actually play the game via BCD, just calling entrypoints with parameters, but a nice user interface is what we want.
+
+# Index the contract data
+
+To drive our user interface we want a good way to fetch all the relevant data we want, in a format suitable for the frontend. To achieve this we create what we call an "index". We put all the on-chain data in a database in a format we can better use to drive our UI. We will be using [PostgreSQL](https://www.postgresql.org/) as our database and [Hasura](https://hasura.io/) as our API layer.
+
+First let's start the postgresql database and prepare the database.
+
+```
+./startPostgresql.sh
+```
+
+
 
 ~ The ChainBorn Team.

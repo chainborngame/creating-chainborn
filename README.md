@@ -125,4 +125,6 @@ Now you can open http://localhost:8081/console in your favourite browser.
 
 Navigate to DATA, select the "public" schema on the default database. Tap "Track" for all our tables.
 
+![Hasura](screenshots/hasura.png?raw=true "Hasura")
+
 ~ The ChainBorn Team.

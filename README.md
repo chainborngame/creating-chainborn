@@ -94,11 +94,11 @@ psql -h localhost -U postgres -d chainborn < schema.sql
 ## Start the indexer
 
 The indexer is a small [node.js](https://nodejs.org/en/) application that reads the data from [tzkt](https://tzkt.io/) and indexes data into your local database.
+**NB!!** Edit config.js and replace CHAINBORN_CONTRACT and CHAINBORN_DATASTORE with your respective contract addresses.
 
 ```
 cd indexer
 npm install
-# Edit config.js and replace CHAINBORN_CONTRACT and CHAINBORN_DATASTORE
 npm start
 > chainborn-indexer@1.0.0 start
 > node index.js

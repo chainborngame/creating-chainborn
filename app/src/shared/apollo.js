@@ -17,11 +17,11 @@ const POLL_INTERVAL = 5000
 /** INIT **/
 
 const httpLink = new HttpLink({
-  uri: `https://${HASURA_HOST}/v1/graphql`
+  uri: `http://${HASURA_HOST}/v1/graphql`
 })
 
 const wsLink = new WebSocketLink({
-  uri: `wss://${HASURA_HOST}/v1/graphql`,
+  uri: `ws://${HASURA_HOST}/v1/graphql`,
   options: {
     reconnect: true
   }
@@ -42,7 +42,7 @@ const splitLink = split(
 let apolloClient;
 export function getApolloClient() {
   if (!apolloClient) apolloClient = new ApolloClient({
-    uri: `https://${HASURA_HOST}/v1/graphql`,
+    uri: `http://${HASURA_HOST}/v1/graphql`,
     link: splitLink,
     cache: new InMemoryCache()
   })

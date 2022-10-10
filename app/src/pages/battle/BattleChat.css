@@ -1,0 +1,135 @@
+.BattleChat {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  background-color: var(--color-dark-grey); 
+}
+
+.BattleChat.hidden {
+  display: none;
+}
+
+.BattleChat main {
+  padding: 10px;
+  height: 100%;
+  width: 400px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  color: var(--color-brand-light); 
+}
+
+.BattleChat main::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+.BattleChat main::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+.BattleChat main::-webkit-scrollbar-thumb {
+  background: #6649b8;
+}
+
+.BattleChat .message  {
+  display: flex;
+  margin-bottom: 15px;
+}
+.BattleChat .message .avatar {
+}
+.BattleChat .message .avatarImage {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+} 
+.BattleChat .message .avatar .youtext {
+  font-size: 0.5em;
+  display: flex;
+  justify-content: center;
+  color: var(--color-brand-middle);
+}
+.BattleChat .message .payload {
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.BattleChat .message .payload .meta {
+  display: flex;
+  font-size: 0.7em;
+  color: var(--color-brand-middle);
+}
+.BattleChat .message .payload .meta a {
+  font-decoration: none;
+  color: inherit;
+}
+.BattleChat .message .payload .meta .date {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-left: 5px;
+  margin-top: 2px;
+  font-size: 0.65em;
+}
+.BattleChat .message .payload p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.BattleChat form {
+  height: 40px;
+  background-color: rgb(24, 23, 23);
+  width: 100%;
+  display: flex;
+  font-size: 1em;
+}
+
+.BattleChat form button {
+  width: 10%;
+  background-color: var(--color-brand-middle); 
+}
+
+.BattleChat input {
+  line-height: 1.5;
+  width: 100%;
+  font-size: 1rem;
+  background: rgb(58, 58, 58);
+  color: var(--color-accent);
+  outline: none;
+  border: none;
+  padding: 10px;
+}
+
+.BattleChat button {
+  background-color: #282c34; /* Green */
+  border: none;
+  color: var(--color-accent);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+.BattleChat button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.BattleChat button.close {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  width: 56px;
+  border-radius: 50%;
+  padding: 8px;
+}
+
+.BattleChat button.close:active {
+  transform: scale(0.9);
+}

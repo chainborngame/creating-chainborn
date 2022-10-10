@@ -1,0 +1,98 @@
+.BattleRow { 
+  height: 85px;
+  cursor: pointer!important;
+}
+.BattleRow .battleMetaWrapperOuter {
+  overflow-y: hidden;
+  padding-left: 12px;
+  padding-right: 12px;
+  overflow: hidden;
+}
+.BattleRow .battleMetaWrapper {
+  display: flex;
+  height: var(--height-battle-row); 
+  align-items: center;
+  background-color: var(--color-brand-middle);
+}
+.BattleRow .battleMetaWrapper::before {
+  content: '';
+  width: 12px;
+  height: calc(var(--height-battle-row) + 10px); 
+  background-color: var(--color-secondary);
+  transform: skew(-10deg, 10deg) translateX(-5px);
+  margin-right: 20px;
+}
+.BattleRow .battleMetaWrapper::after {
+  content: '';
+  width: 12px;
+  height: calc(var(--height-battle-row) + 10px); 
+  background-color: var(--color-secondary);
+  transform: skew(-10deg, 10deg) translateX(5px);
+  margin-left: 20px;
+}
+.BattleRow .battleMeta {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.75em;
+  min-width: 10px;
+  color: var(--color-brand-light);
+}
+.BattleRow .battleMeta .battleMetaRow {
+  font-family: sans-serif;
+  font-size: 0.8em;
+  line-height: 1.8em;
+  display: flex;
+  color: var(--color-secondary);
+}
+.BattleRow .battleMeta .battleMetaRow div {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.BattleRow .battleMeta .battleMetaRow label {
+  width: 80px;
+  margin-right: 12px;
+  font-family: ghostclan;
+  letter-spacing: 1px;
+  font-weight: bold;
+  cursor: pointer!important;
+}
+.BattleRow .battleMeta.dates .battleMetaRow label {
+  width: 80px;
+}
+.BattleRow .loot {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.BattleRow .loot label {
+  font-weight: bold;
+  margin-right: 5px;
+}
+.BattleRow .status {
+  margin-left: auto;
+  overflow: hidden;
+  font-family: ghostclan;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 900px) {
+  .BattleRow .battleMetaWrapperOuter {
+    display: none;
+  } 
+  .BattleRow .loot {
+    margin-left: auto;
+  }  
+}
+
+@media only screen and (max-width: 480px) {
+  .BattleRow .battleMetaWrapperOuter,
+  .BattleRow .loot,
+  .BattleRow .status {
+    display: none;
+  } 
+}

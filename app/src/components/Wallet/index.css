@@ -1,0 +1,25 @@
+
+.TezosWalletContainer {
+/*  position: fixed;
+  top: 10px;
+  right: 10px;*/
+}
+
+.TezosWalletContainer .TezosWallet {
+  height: 48px;
+  background-color: var(--color-secondary);
+  border-radius: 0;
+  color: var(--color-brand-middle); 
+  font-weight: bold;
+}
+.TezosWalletContainer svg {
+}
+.TezosWalletContainer .TezosWallet .spacer {
+  border-left: 2px solid var(--color-brand-middle); 
+}
+.TezosWalletContainer .TezosWallet .TezosWalletMenu {
+  box-sizing: content-box!important;
+  background-color: var(--color-secondary); 
+  transform: translateY(5px);
+  border-radius: 0;
+}

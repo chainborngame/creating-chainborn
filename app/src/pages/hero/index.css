@@ -1,0 +1,20 @@
+.HeroTabs button {
+  flex: 1;
+}
+
+.Hero .BattleLink {
+  font-size: 1.2em;
+  background-color: var(--color-secondary);
+  margin-left: 10px;
+}
+.Hero .BattleLink a {
+  color: var(--color-brand);
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+}
+
+.Hero .BattleLink svg {
+  color: var(--color-brand);
+  margin-left: 5px;
+}

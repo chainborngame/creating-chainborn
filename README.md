@@ -91,7 +91,7 @@ CREATE DATABASE
 psql -h localhost -U postgres -d chainborn < schema.sql
 ```
 
-## Start the indexer
+## Start the game indexer
 
 The indexer is a small [node.js](https://nodejs.org/en/) application that reads the data from [tzkt](https://tzkt.io/) and indexes data into your local database.
 **NB!!** Edit config.js and replace CHAINBORN_CONTRACT and CHAINBORN_DATASTORE with your respective contract addresses.
@@ -113,6 +113,26 @@ Update Battles 0
 
 This application runs on an interval and will continouly index any data it finds.
 
+## Start the collection indexer
+
+In addition to tracking the game data, we also need to keep track of the NFT collections our game will support. We need to track ownership and index their metadata. The indexer already supports this is we set the COLLECTION_INDEXER environment variable. Creating an NFT collection on ghostnet is a bit out of scope for this tutorial. But I have create one that you can use; KT1T2uj45Usw7iyrfu7wfsvFhr9VN8ZHCyb8. Feel free to reach out if you want me to mint a few NFTs for you here. 
+
+So in a new terminal do this:
+
+```
+cd indexer
+export COLLECTION_INDEXER=KT1T2uj45Usw7iyrfu7wfsvFhr9VN8ZHCyb8
+npm start
+> chainborn-indexer@1.0.0 start
+> node index.js
+
+-------
+Total amount of tokens to update: 20. Processing 1000...
+Synced collection KT1T2uj45Usw7iyrfu7wfsvFhr9VN8ZHCyb8; 20 updates, 1 batches
+```
+
+This will index NFTs and their metadata into the `heroes` table.
+
 ## Start Hasura
 
 Our indexed data is still only in the database. Now we need to expose it via an API.
@@ -126,5 +146,9 @@ Now you can open http://localhost:8081/console in your favourite browser.
 Navigate to DATA, select the "public" schema on the default database. Tap "Track" for all our tables.
 
 ![Hasura](screenshots/hasura.png?raw=true "Hasura")
+
+# Start the app
+
+Finally we are ready to have all these pieces culminate into an application.
 
 ~ The ChainBorn Team.

@@ -1,0 +1,97 @@
+.RoundList {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  overflow-y: scroll;
+  --round-height: 50px;
+}
+
+.RoundList .Round {
+  height: var(--round-height);
+  flex-shrink: 0;
+  flex-grow: 0;
+  overflow: hidden;
+}
+
+.RoundList .Round .FirstBox {
+  flex-direction: row;
+  align-items: center;
+  height: var(--round-height);
+  position: relative;
+}
+.RoundList .Round .FirstBox.hit {
+  background-color: var(--color-secondary);
+  padding-left: 20px;
+}
+.RoundList .Round .FirstBox div {
+  margin-left: 10px;
+}
+.RoundList .Round .FirstBox svg {
+  font-size: 25px;
+  transform: rotate(180deg);
+}
+.RoundList .Round .FirstBox .arrow {
+  position: absolute;
+  right: -20px;
+  width: var(--round-height);
+  height: var(--round-height);
+  transform: rotate(45deg);
+  background-color: var(--color-brand-middle);
+}
+
+
+.RoundList .Round .LastBox {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  height: var(--round-height);
+  position: relative;
+}
+.RoundList .Round .LastBox.hit {
+  background-color: var(--color-secondary);
+  padding-right: 20px;
+}
+.RoundList .Round .LastBox div {
+  margin-right: 10px;
+}
+.RoundList .Round .LastBox svg {
+  font-size: 25px;
+  transform: rotate(270deg);
+}
+.RoundList .Round .LastBox .arrow {
+  position: absolute;
+  left: -20px;
+  width: var(--round-height);
+  height: var(--round-height);
+  transform: rotate(45deg);
+  background-color: var(--color-brand-middle);
+}
+
+.RoundList .Round .damage {
+  width: 30px;
+  text-align: center;
+}
+
+.RoundList .Round .damageTotal {
+  font-size: 0.7em;
+  margin-top: 4px;
+  color: var(--color-brand-middle);
+}
+
+.RoundList .Round .CenterBox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.RoundList .Round .heroname {
+  font-size: 1em;
+  display: flex;
+  color: black;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.RoundList .Round .timestamp {
+  font-size: 0.8em;
+  line-height: 0.8em;
+  display: flex;
+}

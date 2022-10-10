@@ -1,0 +1,64 @@
+.Notifications {
+  overflow: scroll;
+  height: 600px;
+  background-color: var(--color-brand-dark);
+  border: 1px solid var(--color-brand-middle); 
+  display: flex;
+  flex-direction: column;
+}
+
+.Notifications .top {
+  font-size: 0.8em;
+  background-color: var(--color-dark-grey);
+  color: var(--color-brand-middle);
+  display: flex;
+  border-bottom: 1px solid var(--color-brand-middle);
+  justify-content: flex-end;
+}
+.Notifications .top .markAllRead {
+  font-weight: bold;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.Notifications .item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-brand);
+  border-bottom: 1px solid var(--color-brand-middle);
+  padding: 10px;
+  cursor: pointer;
+}
+.Notifications .item.read {
+  background-color: var(--color-dark-grey);
+  color: var(--color-brand-middle);
+}
+.Notifications .item.unread {
+  color: var(--color-brand-dark); 
+}
+.Notifications .item.unread svg {
+  font-size: 1.2em;
+}
+.Notifications .item .first {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.Notifications .item .text {
+  flex: 1;
+  font-size: 0.8em;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 10px;
+}
+.Notifications .item .date{
+  font-size: 0.5em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 10px;
+}

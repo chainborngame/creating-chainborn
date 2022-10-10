@@ -1,0 +1,91 @@
+:root {
+  --color-dark-grey: #1D1D1B;
+  --color-brand: #00FFE0;
+  --color-brand-light: #73F9DC;
+  --color-brand-middle: #068F78;
+  --color-brand-dark: #1F3731;
+  --color-secondary: #000;
+  --color-accent: #fff;
+  --color-status-error: #FF4040;
+  --color-status-warning: #FFAA15;
+  --color-status-ok: #00C781;
+  --color-unsuited: #333;
+  --height-battle-row: 72px;
+  --transition-move-ms: 150ms;
+  --transition-glow-ms: 200ms;
+  --spacing: 24px;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #00FFE0;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 0px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}

@@ -98,7 +98,7 @@ The indexer is a small [node.js](https://nodejs.org/en/) application that reads 
 
 ```
 cd indexer
-npm install
+npm install 
 npm start
 > chainborn-indexer@1.0.0 start
 > node index.js
@@ -112,5 +112,13 @@ Update Battles 0
 ```
 
 This application runs on an interval and will continouly index any data it finds.
+
+## Start Hasura
+
+Our indexed data is still only in the database. Now we need to expose it via an API.
+
+```
+./startHasura.sh
+```
 
 ~ The ChainBorn Team.

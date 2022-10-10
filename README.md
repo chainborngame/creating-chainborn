@@ -121,4 +121,8 @@ Our indexed data is still only in the database. Now we need to expose it via an 
 ./startHasura.sh
 ```
 
+Now you can open http://localhost:8081/console in your favourite browser.
+
+Navigate to DATA, select the "public" schema on the default database. Tap "Track" for all our tables.
+
 ~ The ChainBorn Team.

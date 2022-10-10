@@ -151,4 +151,16 @@ Navigate to DATA, select the "public" schema on the default database. Tap "Track
 
 Finally we are ready to have all these pieces culminate into an application.
 
+```
+cd app
+npm install
+npm start
+```
+
+Navigate to http://localhost:3000 and see the applications live! Connect your wallent and see you can summon a Hero.
+
+![App](screenshots/app.png?raw=true "App")
+
+Enjoy!
+
 ~ The ChainBorn Team.

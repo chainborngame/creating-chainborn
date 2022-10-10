@@ -74,6 +74,8 @@ Now we could actually play the game via BCD, just calling entrypoints with param
 
 To drive our user interface we want a good way to fetch all the relevant data we want, in a format suitable for the frontend. To achieve this we create what we call an "index". We put all the on-chain data in a database in a format we can better use to drive our UI. We will be using [PostgreSQL](https://www.postgresql.org/) as our database and [Hasura](https://hasura.io/) as our API layer.
 
+## Prepare the database
+
 First let's start the postgresql database and prepare the database.
 
 ```
@@ -88,6 +90,9 @@ CREATE DATABASE
 # Load the schema
 psql -h localhost -U postgres -d chainborn < schema.sql
 ```
+
+## Start the indexer
+
 
 
 ~ The ChainBorn Team.

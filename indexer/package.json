@@ -1,0 +1,23 @@
+{
+  "name": "chainborn-indexer",
+  "type": "module",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@asbjornenge/tzkt-api": "^1.0.4",
+    "@sentry/node": "^6.19.6",
+    "@taquito/utils": "^12.0.0",
+    "node-fetch": "^3.2.3",
+    "object-hash": "^3.0.0",
+    "pg": "^8.7.3",
+    "pg-format": "^1.0.4",
+    "tiny-env-config": "^1.0.0"
+  }
+}

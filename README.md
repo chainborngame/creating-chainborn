@@ -163,6 +163,6 @@ Navigate to http://localhost:3000 and see the applications live! Connect your wa
 
 Before you can actually summon a Hero, your contract is missing one last piece. Can you figure out what that is? TIP: See the error message when trying to summon.
 
-Enjoy! :sparke_heart:
+Enjoy! :sparkling_heart:
 
 ~ The ChainBorn Team.

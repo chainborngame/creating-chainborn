@@ -161,6 +161,10 @@ Navigate to http://localhost:3000 and see the applications live! Connect your wa
 
 ![App](screenshots/app.png?raw=true "App")
 
+Before you can actually summon a Hero, your contract is missing one last piece. Can you figure out what that is?
+
+TIP: See the error message when trying to summon.
+
 Enjoy!
 
 ~ The ChainBorn Team.

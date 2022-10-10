@@ -5,4 +5,6 @@ compiled
 output
 secrets
 pgdata
+node_modules
+package-lock.json
 *.swp

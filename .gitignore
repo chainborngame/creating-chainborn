@@ -4,4 +4,5 @@ pyvenv.cfg
 compiled
 output
 secrets
+pgdata
 *.swp

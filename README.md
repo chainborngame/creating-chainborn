@@ -77,9 +77,17 @@ To drive our user interface we want a good way to fetch all the relevant data we
 First let's start the postgresql database and prepare the database.
 
 ```
+# Start postgres (see file for password)
 ./startPostgresql.sh
-```
 
+# Create the database
+psql -h localhost -U postgres
+postgres=# create database chainborn;
+CREATE DATABASE
+
+# Load the schema
+psql -h localhost -U postgres -d chainborn < schema.sql
+```
 
 
 ~ The ChainBorn Team.

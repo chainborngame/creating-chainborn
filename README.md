@@ -93,6 +93,24 @@ psql -h localhost -U postgres -d chainborn < schema.sql
 
 ## Start the indexer
 
+The indexer is a small [node.js](https://nodejs.org/en/) application that reads the data from [tzkt](https://tzkt.io/) and indexes data into your local database.
 
+```
+cd indexer
+npm install
+# Edit config.js and replace CHAINBORN_CONTRACT and CHAINBORN_DATASTORE
+npm start
+> chainborn-indexer@1.0.0 start
+> node index.js
+
+-------
+Updated config and contract storage for ghostnet
+Heroes updates 0
+Cancelled Battles 0
+New Battles 0
+Update Battles 0
+```
+
+This application runs on an interval and will continouly index any data it finds.
 
 ~ The ChainBorn Team.

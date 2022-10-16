@@ -167,7 +167,7 @@ The ghostnet version of the game is also available online here: https://ghost.ch
 
 The mainnet version of the game (more advanced version) is available here: https://chainborn.xyz
 
-You can find a playing tutorial here: https://medium.com/chainborn/getting-started-3453635a1c27
+You can find a playing tutorial here: https://medium.com/chainborn/getting-started-3453635a1c27  
 FAQ: https://ghost.chainborn.xyz/faq
 
 Enjoy! :sparkling_heart:

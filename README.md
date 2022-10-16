@@ -115,7 +115,7 @@ This application runs on an interval and will continouly index any data it finds
 
 ## Start the collection indexer
 
-In addition to tracking the game data, we also need to keep track of the NFT collections our game will support. We need to track ownership and index their metadata. The indexer already supports this if we set the COLLECTION_INDEXER environment variable. Creating an NFT collection on ghostnet is a bit out of scope for this tutorial. But I have created one that you can use; KT1T2uj45Usw7iyrfu7wfsvFhr9VN8ZHCyb8. Feel free to reach out if you want me to mint a few NFTs for you here. 
+In addition to tracking the game data, we also need to keep track of the NFT collections our game will support. We need to track ownership and index their metadata. The indexer already supports this if we set the COLLECTION_INDEXER environment variable. **Creating an NFT collection on ghostnet is a bit out of scope for this tutorial. But I have created one that you can use; KT1T2uj45Usw7iyrfu7wfsvFhr9VN8ZHCyb8.** Feel free to reach out if you want me to mint a few NFTs for you here. You can learn more about setting up your own FA2 NFT collection [here](https://wiki.tezos.com/build/create-a-tezos-token/fa2-and-smartpy-digital-assets-on-tezos). 
 
 So in a new terminal do this:
 

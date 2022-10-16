@@ -163,6 +163,13 @@ Navigate to http://localhost:3000 and see the applications live! Connect your wa
 
 Before you can actually summon a Hero, your contract is missing one last piece. Can you figure out what that is? TIP: See the error message when trying to summon.
 
+The ghostnet version of the game is also available online here: https://ghost.chainborn.xyz
+
+The mainnet version of the game (more advanced version) is available here: https://chainborn.xyz
+
+You can find a playing tutorial here: https://medium.com/chainborn/getting-started-3453635a1c27
+FAQ: https://ghost.chainborn.xyz/faq
+
 Enjoy! :sparkling_heart:
 
 ~ The ChainBorn Team.
